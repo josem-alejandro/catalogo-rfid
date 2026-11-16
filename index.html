@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo RFID y NFC | MIND RFID</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="products.js"></script>
+<script defer src="catalog.js"></script>
+</head>
+<body>
+<header><div class="wrap masthead"><a class="brand" href="./">MIND <span>RFID</span></a><a href="https://www.mindrfid.com/products/">Catálogo original ↗</a></div></header>
+<main class="wrap">
+  <div class="intro"><h1>Catálogo RFID y NFC</h1><p>Explora los productos del fabricante MIND RFID.</p></div>
+  <div class="layout">
+    <aside><label for="category">Categoría</label><select id="category"><option value="">Todos los productos</option></select></aside>
+    <section aria-label="Productos">
+      <div class="toolbar"><label for="search" class="sr-only">Buscar productos</label><input type="search" id="search" placeholder="Buscar tarjetas, pulseras, lectores…"><p id="count" role="status"></p></div>
+      <div id="grid" class="grid"></div>
+      <p id="empty" hidden>No se encontraron productos.</p>
+      <nav aria-label="Páginas del catálogo" id="pagination" hidden><button id="previous">Anterior</button><span id="page"></span><button id="next">Siguiente</button></nav>
+      <noscript>Activa JavaScript para buscar y filtrar productos.</noscript>
+    </section>
+  </div>
+</main>
+<footer><div class="wrap">Productos e imágenes de <a href="https://www.mindrfid.com/products/">MIND RFID</a>.</div></footer>
+</body>
+</html>
