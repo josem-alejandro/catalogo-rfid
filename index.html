@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Catálogo RFID y NFC | TAPEC</title>
-<link rel="stylesheet" href="style.css?v=3">
-<script defer src="products.js?v=3"></script>
-<script defer src="catalog.js?v=3"></script>
+<link rel="stylesheet" href="style.css?v=4">
+<script defer src="products.js?v=4"></script>
+<script defer src="catalog.js?v=4"></script>
 </head>
 <body>
 <header><div class="wrap masthead"><a class="brand" href="./">TAPEC</a><span>Catálogo</span></div></header>
@@ -28,6 +28,17 @@
     </section>
   </div>
 </main>
-<footer><div class="wrap">TAPEC · <a href="https://www.mindrfid.com/products/">Fuente de productos e imágenes</a></div></footer>
+<dialog id="detail" aria-labelledby="detail-title">
+  <form method="dialog" class="detail-toolbar">
+    <span class="brand">TAPEC</span>
+    <button type="submit" autofocus aria-label="Cerrar ficha">Cerrar</button>
+  </form>
+  <div id="detail-image"></div>
+  <div class="detail-copy">
+    <p id="detail-category"></p>
+    <h2 id="detail-title"></h2>
+  </div>
+</dialog>
+<footer><div class="wrap">TAPEC</div></footer>
 </body>
 </html>

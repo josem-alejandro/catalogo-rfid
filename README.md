@@ -1,6 +1,6 @@
 # Catálogo RFID y NFC de TAPEC
 
-Catálogo estático basado en los productos publicados por [MIND RFID](https://www.mindrfid.com/products/). Los nombres se muestran en español y cada producto abre la ficha del fabricante. Las imágenes se cargan desde el CDN del proveedor y el catálogo oculta las marcas de agua en las miniaturas.
+Catálogo estático basado en los productos publicados por [MIND RFID](https://www.mindrfid.com/products/). Los nombres y las fichas se muestran en español dentro de TAPEC. Las fotos del proveedor se presentan en miniaturas y fichas con el mismo encuadre. Los productos para los que no hay una foto adecuada aparecen sin foto.
 
 ## GitHub Pages
 
