@@ -43,7 +43,26 @@ function render() {
     image.loading = 'lazy';
     const title = document.createElement('h2');
     title.textContent = product.title;
-    link.append(image, title);
+    const visual = document.createElement('div');
+    visual.className = product.crop ? `product-visual crop-${product.crop}` : 'product-visual';
+    visual.append(image);
+    for (const [x, y, width, height, color] of product.masks ?? []) {
+      const mask = document.createElement('span');
+      mask.className = 'product-mask';
+      mask.setAttribute('aria-hidden', 'true');
+      Object.assign(mask.style, {
+        left: `${x / 3}%`,
+        top: `${y / 3}%`,
+        width: `${width / 3}%`,
+        height: `${height / 3}%`,
+        backgroundColor: color
+      });
+      visual.append(mask);
+    }
+    const action = document.createElement('span');
+    action.className = 'product-action';
+    action.textContent = 'Ver ficha ↗';
+    link.append(visual, title, action);
     return link;
   }));
 }
